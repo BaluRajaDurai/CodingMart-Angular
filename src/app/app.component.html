@@ -1,0 +1,35 @@
+<div class="container">
+    <form #f="ngForm" class="sub" (submit) = "onSubmit()" >
+        <div class = "form-group">
+            <h1>District Search</h1>
+            <label for="district">District Name</label>
+            <input class="a" type="text" name="district" placeholder="Enter District Name" [(ngModel)]="model.district" #district = ngModel>
+        </div> 
+        <pre></pre>
+        <div class = "form-group">
+            <label for="area">Area(sq mt)</label>
+            <input class="b" type="text" name="area"  placeholder="Enter Area" [(ngModel)]="model.area" #area = ngModel>
+        </div> 
+        <pre></pre>
+        <div class = "form-group">
+            <label for="pop">Population</label>
+            <input class="c" type="text" name="pop" placeholder="Enter Population" [(ngModel)]="model.pop" #pop = ngModel> 
+        </div> 
+        <pre></pre>
+        <button class="btn" type="submit">Save</button>
+        <pre></pre>
+        <div class="bdr">
+            Biggest District(Area Wise)<br>
+            <input type="radio"  name="g" value="Chennai">Chennai
+            <input type="radio"  name="g" value="Coimbatore">Coimbatore
+            <input type="radio"  name="g" value="Salem">Salem
+        </div>
+        <pre></pre>
+        <div class="bdr">
+            Highly Populated District<br>
+            <input type="radio"  name="g1" value="Chennai">Chennai
+            <input type="radio"  name="g1" value="Coimbatore">Coimbatore
+            <input type="radio"  name="g1" value="Salem">Salem
+        </div>
+    </form>
+</div>
